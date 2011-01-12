@@ -1,0 +1,9 @@
+desc <- packageDescription("CAscaling", fields= c("Date","Version"))
+year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", desc$Date)
+vers <- paste(desc$Version)
+citEntry(entry="Misc",
+title = paste("'CAscaling' (Version ",vers,"): An R package for CA scaling [computer software]",sep=""),
+author = personList(as.person("J. H. Straat")),
+year = year,
+note = "",
+textVersion = paste("Straat, J. H. (",year,"). CA scaling (Version ",vers,"): An R package for CA scaling.", sep=""))
